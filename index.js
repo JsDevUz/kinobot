@@ -1,8 +1,8 @@
 const { Telegraf } = require('telegraf');
 const fs = require('fs')
 const { get } = require('lodash');
-
-const bot = new Telegraf(process.env.BOT_TOKEN);
+require('dotenv')
+const bot = new Telegraf('5607633555:AAElFBCn6rL7ft9h8cMf204RYJNijAzbROE');
 const admin = 'admin_id'
 
 const checkUserAvialable = (user) => {
@@ -50,7 +50,7 @@ bot.on('text', async (ctx) => {
         { protect_content: false, disable_notification: false }
 
     ).catch(e => {
-        bot.telegram.sendMessage(ctx.chat.id, 'Bunday ko\'dga ega kino bazada mavjud emass')
+        bot.telegram.sendMessage(ctx.chat.id, 'Bunday ko\'dga ega kino bazada mavjud emas')
     })
 })
 
