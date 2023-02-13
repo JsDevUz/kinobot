@@ -2,7 +2,7 @@ const { Telegraf } = require('telegraf');
 const fs = require('fs')
 const { get } = require('lodash');
 require('dotenv')
-const bot = new Telegraf('5607633555:AAElFBCn6rL7ft9h8cMf204RYJNijAzbROE');
+const bot = new Telegraf('5607633555:');
 const admin = 'admin_id'
 
 const checkUserAvialable = (user) => {
