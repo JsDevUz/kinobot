@@ -3,7 +3,7 @@ const fs = require('fs')
 const { get } = require('lodash');
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
-const admin = '1261385122'
+const admin = 'admin_id'
 
 const checkUserAvialable = (user) => {
     fs.readFile(`./users.txt`, 'utf8', (err, data) => {
